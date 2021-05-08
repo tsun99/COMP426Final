@@ -126,7 +126,7 @@ function App() {
   return (
     <div className="App">
       {user ? (
-        <div>
+        <div className="cont_1">
           <Joe handleLogout={handleLogout}/>
           <div className="youtube">
              <form onSubmit={youtube}>
@@ -138,7 +138,6 @@ function App() {
                 <img src={video.snippet.thumbnails.medium} alt={video.snippet.title} />
                <a href={getURL(video.id.videoId)}>
                  <img src={video.snippet.thumbnails.medium.url} alt={video.snippet.title} />
-                 {console.log(video.snippet.title)}
                </a>
                <p></p>
                </>
